@@ -1,4 +1,4 @@
-import scala.annotation.tailrec
+
 
 /* Write a recursive function which verifies the balancing of parentheses in a string */
 
