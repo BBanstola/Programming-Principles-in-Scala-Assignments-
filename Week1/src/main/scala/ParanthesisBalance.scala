@@ -1,7 +1,4 @@
-
-
 /* Write a recursive function which verifies the balancing of parentheses in a string */
-
 
 def balance(str: List[Char]): Boolean = {
   def traverse(count: Int, str: List[Char]): Boolean = {
