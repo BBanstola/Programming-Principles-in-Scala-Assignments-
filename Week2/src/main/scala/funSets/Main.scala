@@ -2,7 +2,11 @@ package funSets
 
 object Main{
 
-  import FunSets._
+  def main(args: Array[String]): Unit = {
 
-  println(contains(singletonSet(1), 2))
+    import FunSets._
+
+    println(contains(singletonSet(1), 2))
+
+  }
 }
