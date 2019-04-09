@@ -4,8 +4,6 @@ The Assignment
 
 In this assignment, you will work with a functional representation of sets based on the mathematical notion of characteristic functions. The goal is to gain practice with higher-order functions.
 
-Download the "funsets.zip" handout archive file and extract it somewhere on your machine. Write your solutions by completing the stubs in the FunSets.scala file.
-
 Write your own tests! For this assignment, we don’t give you tests but instead the FunSetSuite.scala file contains hints on how to write your own tests for the assignment.
 Representation
 
