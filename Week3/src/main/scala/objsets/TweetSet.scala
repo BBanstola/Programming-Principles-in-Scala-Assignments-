@@ -55,6 +55,15 @@ class Empty extends TweetSet {
 
 class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet{
 
+  override def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = {
+    val pom1 = left.filterAcc(p, acc)
+    val pom2 = right.filterAcc(p, pom1)
+    if (p(elem)) pom2.incl(elem) else pom2
+  }
+
+  override def union(that: TweetSet): TweetSet =
+    filterAcc(tw => true, that)
+
   override def mostRetweeted:Tweet = {
     val leftBiggest = if (!left.isEmpty) left.mostRetweeted else elem
     val rightBiggest = if (!right.isEmpty) right.mostRetweeted else elem
