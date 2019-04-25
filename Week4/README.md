@@ -1,12 +1,7 @@
 Types and Pattern Matching
-
-Week: 4
-
 Assignment: Huffman Coding
 
 Huffman Coding: Instructions
-
-
 
 Huffman coding is a compression algorithm that can be used to compress lists of characters.
 
